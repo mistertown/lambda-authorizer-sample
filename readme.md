@@ -11,7 +11,7 @@ It deploys two endpoints:
 
 ## Testing
 
-For these tests requests, replace `API_GATEWAY_ID` and `AWS_REGION` with the ID and Region for your deployed stack.
+For these test requests, replace `API_GATEWAY_ID` and `AWS_REGION` with the ID and Region for your deployed stack.
 
 ### Test `/unrestricted`
 
