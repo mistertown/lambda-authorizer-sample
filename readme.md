@@ -13,19 +13,19 @@ It deploys two endpoints:
 
 For these test requests, replace `API_GATEWAY_ID` and `AWS_REGION` with the ID and Region for your deployed stack.
 
-### Test `/unrestricted`
+**Test `/unrestricted`**
 
 `curl https://{API_GATEWAY_ID}.execute-api.{AWS_REGION}.amazonaws.com/unrestricted`
 
 Expected response: `This is the unrestricted endpoint, hi there! 👋`
 
-### Test `/restricted` _without_ Authorization Header
+**Test `/restricted` _without_ Authorization Header**
 
 `curl https://{API_GATEWAY_ID}.execute-api.{AWS_REGION}.amazonaws.com/restricted`
 
 Expected response: `{"message":"Unauthorized"}`
 
-### Test `/restricted` _with_ Authorization Header
+**Test `/restricted` _with_ Authorization Header**
 
 `curl -H "Authorization:Test" https://{API_GATEWAY_ID}.execute-api.{AWS_REGION}.amazonaws.com/restricted`
 
